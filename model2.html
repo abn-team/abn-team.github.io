@@ -104,22 +104,7 @@ https://templatemo.com/tm-547-real-dynamic
                     <h4>You can also contact other ABN-Team members you know.</h4>
                     </p>
                     <!-- Link Gitalk 的支持文件  -->
-                    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-                    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
                     <div id="gitalk-container"></div>
-                    <script type="text/javascript">
-                        var gitalk = new Gitalk({
-                            // gitalk的主要参数
-                            clientID: '162a7c6cd6d62c8f91f3',
-                            clientSecret: 'c862fb187bf9b3a2f594e87ec3b984a71689e947',
-                            repo: 'https://abn-team.top/',
-                            owner: 'abn-team',
-                            admin: ['abn-team'],
-                            id: window.location.pathname,
-
-                        });
-                        gitalk.render('gitalk-container');
-                    </script>
                     <!-- Gitalk end -->
                 </div>
             </section>
@@ -207,25 +192,32 @@ https://templatemo.com/tm-547-real-dynamic
         });
 
     </script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
-    <script>
-        NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-            NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-                var gitalk = new Gitalk({
-                    clientID: 'ffe27db188b1ff6b3826',
-                    clientSecret: '7979e6a5a3ea866bfea18c3670bf9e122ef9493b',
-                    repo: 'YDJSIR-NJU.github.io',
-                    owner: 'YDJSIR-NJU',
-                    admin: ['YDJSIR-NJU'],
-                    id: '78b49ace996ac7f3ae5c640eb70f56a7',
-                    language: 'en',
-                    distractionFreeMode: true
-                });
-                gitalk.render('gitalk-container');
-            }, window.Gitalk);
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+            // gitalk的主要参数
+            clientID: '162a7c6cd6d62c8f91f3',
+            clientSecret: 'c862fb187bf9b3a2f594e87ec3b984a71689e947',
+            repo: 'abn-team.github.io',
+            owner: 'abn-team',
+            admin: ['abn-team'],
+            id: window.location.pathname,
+            distractionFreeMode: false
+
         });
+        gitalk.render('gitalk-container');
     </script>
 </body>
 
 </html>
+
+clientID: 'GitHub Application Client ID',
+clientSecret: 'GitHub Application Client Secret',
+repo: 'GitHub repo',
+owner: 'GitHub repo owner',
+admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+id: location.pathname,      // Ensure uniqueness and length less than 50
+distractionFreeMode: false  // Facebook-like distraction free mode
