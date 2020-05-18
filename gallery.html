@@ -338,6 +338,7 @@ https://templatemo.com/tm-547-real-dynamic
                     
                 </div>
             </div>
+            <div id="gitalk-container"></div>
         <br>
     </div>
             <br>
@@ -468,6 +469,24 @@ https://templatemo.com/tm-547-real-dynamic
         });
 
     </script>
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+            // gitalk的主要参数
+            clientID: '162a7c6cd6d62c8f91f3',
+            clientSecret: 'c862fb187bf9b3a2f594e87ec3b984a71689e947',
+            repo: 'abn-team.github.io',
+            owner: 'abn-team',
+            admin: ['abn-team'],
+            id: window.location.pathname,
+            distractionFreeMode: false
+
+        });
+        gitalk.render('gitalk-container');
+</script>
 </body>
 
 </html>
