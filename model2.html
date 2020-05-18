@@ -8,10 +8,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166813896-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-166813896-1');
+        gtag('config', 'UA-166813896-1');
     </script>
     <title>ABN-Team</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" />
@@ -21,7 +21,7 @@
     <link href="slick/slick-theme.css" rel='stylesheet' />
     <link href="css/templatemo-real-dynamic.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="icon.ico" />
-<!--
+    <!--
 
 TemplateMo 547 Real Dynamic
 
@@ -46,7 +46,8 @@ https://templatemo.com/tm-547-real-dynamic
                             <!-- Collapse button -->
                             <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
                                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars text-white"></i></span></button>
+                                aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                                        class="fas fa-bars text-white"></i></span></button>
                             <!-- Collapsible content -->
                             <div class="collapse navbar-collapse tm-nav" id="navbarNav">
                                 <!-- Links -->
@@ -58,10 +59,11 @@ https://templatemo.com/tm-547-real-dynamic
                                         <a class="nav-link tm-nav-link" href="about.html">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link tm-nav-link" href="gallery.html">Gallery</a>
+                                        <a class="nav-link tm-nav-link" href="gallery.html">Projects</a>
                                     </li>
                                     <li class="nav-item active">
-                                        <a class="nav-link tm-nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link tm-nav-link" href="#">Contact <span
+                                                class="sr-only">(current)</span></a>
                                     </li>
                                 </ul>
                                 <!-- Links -->
@@ -75,7 +77,7 @@ https://templatemo.com/tm-547-real-dynamic
         </div> <!-- tm-site-header-overlay -->
         <div class="tm-header-stripe w-100"></div>
     </div>
-    <div class="tm-container"> 
+    <div class="tm-container">
         <div class="parallax-window" data-parallax="scroll" data-image-src="https://oss.abn-team.top/Pic/contact.jpg">
         </div>
     </div>
@@ -87,16 +89,38 @@ https://templatemo.com/tm-547-real-dynamic
             <section class="row tm-mb-1">
                 <div class="col-12 text-center mx-auto tm-about-box">
                     <h2 class="tm-text-primary tm-my-1 tm-mb-5 tm-intro-text">Contact the ABN-Team</h2>
-                    <p>If you need to negotiate with us / donate us, please contact YDJSIR or Knight of our team. We will reply to you as soon as possible.
+                    <p>If you need to negotiate with us / donate us, please contact YDJSIR or Knight of our team. We
+                        will reply to you as soon as possible.
                         <br>
-                        <h3>YDJSIR</h3>
-                        Mail: <a href="mailto:ydjsir@abn-team.top">YDJSIR</a> Website: <a href="https://ydj.abn-team.top">https://ydj.abn-team.top</a>
-                        <br>
-                        <br>
-                        <h3>Knight</h3>
-                        Mail: <a href="mailto:350311089@qq.com">Knight000</a> Website: <a href="https://knight.abn-team.top">https://knight.abn-team.top</a>
-                        <br><br>
-                        <h4>You can also contact other ABN-Team members you know.</h4></p>
+                    <h3>YDJSIR</h3>
+                    Mail: <a href="mailto:ydjsir@abn-team.top">YDJSIR</a> Website: <a
+                        href="https://ydj.abn-team.top">https://ydj.abn-team.top</a>
+                    <br>
+                    <br>
+                    <h3>Knight</h3>
+                    Mail: <a href="mailto:350311089@qq.com">Knight000</a> Website: <a
+                        href="https://knight.abn-team.top">https://knight.abn-team.top</a>
+                    <br><br>
+                    <h4>You can also contact other ABN-Team members you know.</h4>
+                    </p>
+                    <!-- Link Gitalk 的支持文件  -->
+                    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+                    <div id="gitalk-container"></div>
+                    <script type="text/javascript">
+                        var gitalk = new Gitalk({
+                            // gitalk的主要参数
+                            clientID: '162a7c6cd6d62c8f91f3',
+                            clientSecret: 'c862fb187bf9b3a2f594e87ec3b984a71689e947',
+                            repo: 'https://abn-team.top/',
+                            owner: 'abn-team',
+                            admin: ['abn-team'],
+                            id: window.location.pathname,
+
+                        });
+                        gitalk.render('gitalk-container');
+                    </script>
+                    <!-- Gitalk end -->
                 </div>
             </section>
 
@@ -104,12 +128,10 @@ https://templatemo.com/tm-547-real-dynamic
             <div class="tm-mb-2">
                 <h2 class="text-center tm-text-primary tm-h2-big tm-mb-6">We are always welcoming new members!</h2>
             </div>
-            
-        </div>
-        <br>
-    </div>
-    <br>
-    <br>
+
+
+
+
             <div class="row tm-mb-7">
                 <div class="col-lg-3 col-sm-6 mb-lg-0 mb-5">
                     <h3 class="tm-text-primary tm-mb-4">Friendly Links</h3>
@@ -136,16 +158,17 @@ https://templatemo.com/tm-547-real-dynamic
                     <h3 class="tm-text-primary tm-mb-4">Main Menu</h3>
                     <nav class="tm-nav-secondary">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-lg-0 mb-5">
                     <h3 class="tm-text-primary tm-mb-4">About ABN-Team</h3>
-                    <p class="tm-mb-4">Unified comprehensive team of some geeks since 2014, which has become a technological team well developing.</p>
+                    <p class="tm-mb-4">Unified comprehensive team of some geeks since 2014, which has become a
+                        technological team well developing.</p>
                     <div>
                         <!--
                         <a href="https://youtube.com" class="tm-social-link"><i class="fab fa-youtube tm-social-icon"></i></a>
@@ -159,7 +182,7 @@ https://templatemo.com/tm-547-real-dynamic
             <footer class="row">
                 <p class="mb-0 w-100 text-center col-12">
                     Powered by &copy; 2020 YDJSIR
-                    
+
                     - Designed by <a rel="nofollow" href="https://templatemo.com" class="tm-text-link">TemplateMo</a>
                 </p>
             </footer>
@@ -171,7 +194,7 @@ https://templatemo.com/tm-547-real-dynamic
     <script src="js/parallax.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/tooplate-script.js"></script>
-    <script>        
+    <script>
         $(document).ready(function () {
             // Testimonials carousel
             $('.tm-carousel').slick({
@@ -184,5 +207,25 @@ https://templatemo.com/tm-547-real-dynamic
         });
 
     </script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+    <script>
+        NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+            NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+                var gitalk = new Gitalk({
+                    clientID: 'ffe27db188b1ff6b3826',
+                    clientSecret: '7979e6a5a3ea866bfea18c3670bf9e122ef9493b',
+                    repo: 'YDJSIR-NJU.github.io',
+                    owner: 'YDJSIR-NJU',
+                    admin: ['YDJSIR-NJU'],
+                    id: '78b49ace996ac7f3ae5c640eb70f56a7',
+                    language: 'en',
+                    distractionFreeMode: true
+                });
+                gitalk.render('gitalk-container');
+            }, window.Gitalk);
+        });
+    </script>
 </body>
+
 </html>
