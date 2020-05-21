@@ -29,12 +29,12 @@ a:hover { text-decoration: none; }
 button:focus { outline: none; }
 
 p, address {
-  color: #666;
+  color: #68696A;
   line-height: 1.9;    
 }
 
 address { max-width: 400px; }
-ul, i { color: #666; }
+ul, i { color: #333333; }
 ul { line-height: 2; }
 
 .tm-container {
@@ -59,7 +59,7 @@ ul { line-height: 2; }
 .tm-header-stripe {
     height: 0px;
     width: 68.75%;
-    background-color: #474849;      
+    background-color: #3f3f3f;      
     background-image: url(../img/stripe-short.png);
 }
 
@@ -89,7 +89,7 @@ ul { line-height: 2; }
 
 .nav-item.active,
 .nav-item:hover {
-  background-color: #474849;
+  background-color: #3f3f3f;
 }
 
 .nav-item.active .nav-link,
@@ -106,7 +106,7 @@ ul { line-height: 2; }
 .tm-text-primary {
   font-family: Microsoft YaHei;
   color: #06C; }
-.tm-text-dark-gray { color: #68696A; }
+.tm-text-dark-gray { color: #3f3f3f; }
 
 .tm-my-1 {
     margin-top: 50px;
