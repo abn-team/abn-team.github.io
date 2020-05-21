@@ -1,5 +1,11 @@
 /*
 
+TemplateMo 547 Real Dynamic
+
+https://templatemo.com/tm-547-real-dynamic
+
+
+
     COLOR
     Gray: #474849 - Menu highlight color
     Light gray: #656667  - Background overlay color
@@ -14,10 +20,10 @@
 */
 
 body {
-  font-family: 'Microsoft YaHei';
+  font-family: 'Lato', Arial, sans-serif, 'Microsoft YaHei';
   font-size: 20px;
   overflow-x: hidden;
-  background-color: #1f1f1f;  
+  background-color: #323232;  
 }
 
 a { 
@@ -45,30 +51,34 @@ ul { line-height: 2; }
 .container-fluid { max-width: 1570px; }
 
 .tm-site-header {
-    background-color: #ffffff10;
-    /* background-image: url(../img/stripe.png); */
-    height: 2px;    
+    background-color: #474849;
+    background-image: url(../img/stripe.png);
+    height: 30px;    
 }
 
 .tm-site-header-overlay {
-    color: #06C;
-    background-color: #ffffff0a;    
-    padding-top: 15px; 
+    color: white;
+    background-color: #656667;    
+    padding-top: 5px; 
 }
 
 .tm-header-stripe {
-    height: 0px;
+    height: 30px;
     width: 68.75%;
     background-color: #474849;      
     background-image: url(../img/stripe-short.png);
 }
 
+.tm-header-stripe-short {
+    width: 62%;
+    margin-top: 5px;  
+}
 
-.tm-site-header-left { padding-bottom: 20px; }
+.tm-site-header-left { padding-bottom: 30px; }
 
 .tm-site-header-right {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 0px;
 }
 
 .tm-site-name { font-size: 3rem; }
@@ -82,7 +92,7 @@ ul { line-height: 2; }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #06C;
+  color: white;
   padding: 14px 25px;      
   transform: skew(20deg, 0);
 }
@@ -103,13 +113,11 @@ ul { line-height: 2; }
 }
 
 .tm-intro-text { font-size: 2.6rem; }
-.tm-text-primary {
-  font-family: Microsoft YaHei;
-  color: #06C; }
+.tm-text-primary { color: #06C; }
 .tm-text-dark-gray { color: #68696A; }
 
 .tm-my-1 {
-    margin-top: 50px;
+    margin-top: 90px;
     margin-bottom: 100px;
 }
 
