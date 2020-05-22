@@ -662,7 +662,7 @@ select:not([multiple]) {
 
     .navbar-toggler {
         margin-left: auto;
-        background-color: #656667;
+        background-color: #3f3f3f;
         border-radius: 0;
     }
 
@@ -681,7 +681,7 @@ select:not([multiple]) {
     }
 
     .tm-nav ul {
-        background-color: #656667;
+        background-color: #3f3f3f;
         padding-left: 12px;  
         padding-right: 12px;      
     }
